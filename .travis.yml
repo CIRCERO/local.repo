@@ -19,4 +19,5 @@ install:
   - pip install python-dateutil pytest
 # command to run tests
 script: py.test -v
+runs-on: self-hosted
 

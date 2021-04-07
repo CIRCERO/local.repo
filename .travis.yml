@@ -1,0 +1,22 @@
+language: python
+matrix:
+  include:
+    - python: "2.7"
+    - python: "2.7.10"
+    - python: "2.7.11"
+    - python: "3.2"
+    - python: "3.3"
+    - python: "3.4"
+  allow_failures:
+    - python: "3.5"
+    - python: "3.6"
+    - python: "3.7"
+    - python: "3.8"
+    - python: "nightly"
+  
+# command to install dependencies
+install: 
+  - pip install python-dateutil pytest
+# command to run tests
+script: py.test -v
+
